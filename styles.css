@@ -134,12 +134,13 @@ body {
 /* Main content */
 .main-content {
     flex: 1;
-    background:  linear-gradient(135deg, rgba(255, 0, 0, 0.15), rgba(255, 100, 100, 0.15));
+    background: rgba(255, 0, 0, 0.08); /* subtle red tint */
     border-radius: 25px;
     padding: 40px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.6), 
+                0 0 60px rgba(255, 0, 0, 0.4); /* red glow */
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 0, 0, 0.3); /* red border */
 }
 
 /* Quiz Container */
