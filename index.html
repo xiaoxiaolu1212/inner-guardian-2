@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summon Your Inner Guardian</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Mystical Background Elements -->
+        <div class="mystical-bg">
+            <div class="floating-symbols">
+                <span>✧</span>
+                <span>✦</span>
+                <span>✧</span>
+                <span>✦</span>
+                <span>✧</span>
+            </div>
+        </div>
+
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-moon"></i>
+                <h1>Summon Your Inner Guardian</h1>
+            </div>
+            <p class="subtitle">Embark on a mystical journey to discover the animal spirit that guides your soul</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Quiz Container -->
+            <div class="quiz-container" id="quizContainer">
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressText">Question 1 of 5</span>
+                </div>
+
+                <div class="question-container" id="questionContainer">
+                    <h2 class="question-title" id="questionTitle">What element resonates most with your soul?</h2>
+                    <div class="options-grid" id="optionsGrid">
+                        <!-- Options will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="navigation-buttons">
+                    <button class="nav-btn back-btn" id="backBtn" style="display: none;">
+                        <i class="fas fa-arrow-left"></i>
+                        Back
+                    </button>
+                    <button class="nav-btn next-btn" id="nextBtn" disabled>
+                        Next
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Results Container -->
+            <div class="results-container" id="resultsContainer" style="display: none;">
+                <div class="results-header">
+                    <h2>Your Inner Guardian Has Been Revealed</h2>
+                    <p class="guardian-subtitle">The spirit that guides your path</p>
+                </div>
+
+                <div class="guardian-display">
+                    <div class="guardian-image">
+                        <img id="guardianImage" src="" alt="Your Guardian">
+                    </div>
+                    <div class="guardian-info">
+                        <h3 class="guardian-name" id="guardianName"></h3>
+                        <p class="guardian-description" id="guardianDescription"></p>
+                        <div class="guardian-traits">
+                            <h4>Guardian Traits:</h4>
+                            <ul id="guardianTraits"></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-actions">
+                    <button class="action-btn share-btn" id="shareBtn">
+                        <i class="fas fa-share"></i>
+                        Share Your Guardian
+                    </button>
+                    <button class="action-btn restart-btn" id="restartBtn">
+                        <i class="fas fa-redo"></i>
+                        Discover Again
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Inner Guardian Summoning. May your spirit guide you well. ✧</p>
+        </footer>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+        <div class="loading-content">
+            <div class="mystical-spinner"></div>
+            <h3>Summoning your guardian...</h3>
+            <p>The ancient spirits are revealing your destiny</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
