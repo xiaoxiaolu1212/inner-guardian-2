@@ -7,12 +7,13 @@
 
 body {
     font-family: 'Crimson Text', serif;
-    background: linear-gradient(135deg, #2e004f 0%, #4b0082 50%, #8a2be2 100%);
+    background: linear-gradient(135deg, #a100ff 0%, #bb00ff 40%, #ff00ff 100%);
     min-height: 100vh;
-    color: #e8e8e8;
+    color: #ffffff; /* bright text pops more against vibrant bg */
     line-height: 1.6;
     overflow-x: hidden;
 }
+
 
 /* Mystical Background */
 .mystical-bg {
