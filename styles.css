@@ -134,7 +134,7 @@ body {
 /* Main content */
 .main-content {
     flex: 1;
-    background: rgba(255, 255, 255, 0.05);
+    background:  linear-gradient(135deg, rgba(255, 0, 0, 0.15), rgba(255, 100, 100, 0.15));
     border-radius: 25px;
     padding: 40px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
